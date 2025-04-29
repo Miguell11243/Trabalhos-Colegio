@@ -1,0 +1,220 @@
+html {
+    font-family: Century Gothic;
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: navy;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+    padding-top: -10px;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.titulo {
+    margin: 20px;
+}
+
+.botaoCabecario {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+}
+
+.botaoCabecario:hover {
+    transform: translateY(-5px);
+    background-color: darkblue;
+    color: white;
+}
+
+
+.botaoCabecario1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    background-color: darkblue;
+}
+
+.botaoCabecario1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+
+.textoPrincipal {
+    width: 50%;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 5%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tituloParagrafo {
+    font-size: 70px;
+    color: blue;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.imagemPrincipal {
+    transform: scale(0.9);
+    margin-top: 18%;
+    border-radius: 10px;
+
+}
+
+button {
+    font-family: Century Gothic;
+}
+
+.botaoSaibamais {
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+    height: 15%;
+    text-align: left;
+    background-image: linear-gradient(blue, navy);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.botaoSaibamais,
+.botaoEntrar {
+    transition: 0.2s ease;
+    font-weight: bold;
+}
+
+.botaoSaibamais:hover {
+
+transform: translateY(5px);
+}
+
+.botaoEntrar:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+footer {
+    padding: 10px;
+    background-color: navy;
+    color: white;
+}
+
+
+span {
+    color: navy;
+}
+
+.botaoEntrar {
+    padding: 10px;
+    width: 20%;
+    height: 15%;
+    background-color: white;
+    border: navy 3px solid;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+aside {
+    background-color: navy;
+    border-radius: 20px;
+}
+
+.texto2{
+margin: auto;
+margin-top: 5%;
+font-size: 30px;
+font-weight: bold;
+background-color: navy;
+padding: 10px;
+color: white;
+border-radius: 20px;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+  
+}
+
+.card1, .card2, .card3{
+font-size: 15px;
+margin: 10px;
+border: 3px solid black;
+border-radius: 5px;
+padding: 10px; 
+transition: 0.2s ease;
+box-shadow: 0 0 5px black;
+}
+
+.textocard{
+width: 190px;
+}
+
+.imagemcard{
+width: 100px;
+height: 100px;
+padding: 10px;
+}
+
+
+.card1:hover, .card2:hover, .card3:hover{
+transform: translateY(-10px);
+background-image: linear-gradient(navy, black);
+transition: 0.2s;
+color: white;
+}
