@@ -1,5 +1,8 @@
 html {
-    font-family: Century Gothic;
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
 
 }
 
@@ -22,7 +25,6 @@ body {
     align-items: center;
     background-color: white;
     color: navy;
-    padding: 0;
     margin: 0;
     justify-content: space-between;
     box-shadow: 0 0 5px black;
@@ -31,6 +33,7 @@ body {
     width: 100%;
     z-index: 1000;
     position: fixed;
+    padding: 0;
 }
 
 .titulo {
@@ -47,10 +50,11 @@ body {
     border: none;
     box-shadow: 0 0 10px black;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .botaoCabecario:hover {
-    transform: translateY(-5px);
+    /*transform: translateY(-5px);*/
     background-color: darkblue;
     color: white;
 }
@@ -67,6 +71,7 @@ body {
     box-shadow: 0 0 10px black;
     transition: 0.3s ease;
     background-color: darkblue;
+    cursor: pointer;
 }
 
 .botaoCabecario1:hover {
@@ -93,6 +98,11 @@ body {
     color: blue;
 }
 
+.titulopginicial {
+    font-size: 30px;
+    color: rgb(0, 0, 67);
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -103,11 +113,12 @@ main {
     transform: scale(0.9);
     margin-top: 18%;
     border-radius: 10px;
-
+    box-shadow: 0 0 20px black;
 }
 
 button {
-    font-family: Century Gothic;
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 .botaoSaibamais {
@@ -120,17 +131,23 @@ button {
     color: white;
     font-size: 25px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .botaoSaibamais,
 .botaoEntrar {
-    transition: 0.2s ease;
+    transition: 0.4s ease;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .botaoSaibamais:hover {
-
-transform: translateY(5px);
+width: 55%;
+background-image: none;
+background-color: white;
+color: black;
+border: 2px solid blue;
+box-shadow: 0 0 10px black;
 }
 
 .botaoEntrar:hover {
@@ -139,8 +156,7 @@ transform: translateY(5px);
 }
 
 
-footer {
-    padding: 10px;
+footer {    
     background-color: navy;
     color: white;
 }
@@ -174,12 +190,18 @@ font-weight: bold;
 background-color: navy;
 padding: 10px;
 color: white;
-border-radius: 20px;
+width: 100%;
+text-align: center;
+font-size: 40px;
+box-sizing: border-box;
 }
 
 .main2 {
     display: flex;
     flex-direction: row;
+    background-image: linear-gradient(navy,blue);
+    height: 625px;
+
 }
 
 .cards{
@@ -188,6 +210,7 @@ border-radius: 20px;
     margin: auto;
     margin-top: 60px;
     text-align: center;
+
   
 }
 
@@ -199,6 +222,7 @@ border-radius: 5px;
 padding: 10px; 
 transition: 0.2s ease;
 box-shadow: 0 0 5px black;
+background-color: white;
 }
 
 .textocard{
@@ -218,3 +242,26 @@ background-image: linear-gradient(navy, black);
 transition: 0.2s;
 color: white;
 }
+
+.botaoContato {
+    background-color: navy;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botaoContato:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+ 
